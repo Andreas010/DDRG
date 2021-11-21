@@ -1,3 +1,3 @@
 # DDRG
 
-[DOCS](https://andreas010.github.io/docs/ddrg/)
+[Documentation](https://andreas010.github.io/docs/ddrg/)
