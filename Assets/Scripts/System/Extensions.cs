@@ -14,6 +14,11 @@ public static class Extensions
     {
         return new(new Range(0, number));
     }
+
+    public static Sprite ToSprite(this Texture2D texture)
+    {
+        return Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one / 2f);
+    }
 }
 
 public ref struct CustomIntEnumerator
