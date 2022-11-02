@@ -43,6 +43,9 @@ public sealed class SongManager : MonoBehaviour
     private Camera cam;
     private Transform camTransform;
 
+    public AudioSource musicSource;
+    private bool hasStartedMusic;
+
     void Start()
     {
         cam = Camera.main;
@@ -85,9 +88,6 @@ public sealed class SongManager : MonoBehaviour
         chartData = new()
         {
             name = "Test Chart",
-            chartAuthor = "Sans",
-            musicAuthor = "Papyrus",
-            description = "No description given",
             bpm = 60,
             difficulty = 2,
             speed = 15,

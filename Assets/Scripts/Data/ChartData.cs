@@ -1,19 +1,13 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public sealed class ChartData : IEquatable<ChartData>
 {
     public string name;
-    public string chartAuthor;
-    public string musicAuthor;
 
     public float bpm;
     public float speed;
 
     public float difficulty;
-    public string description;
 
     public int keyCount;
 
@@ -26,8 +20,8 @@ public sealed class ChartData : IEquatable<ChartData>
         if(other == null)
             return false;
 
-        if (name != other.name || chartAuthor != other.chartAuthor || musicAuthor != other.musicAuthor || bpm != other.bpm ||
-            speed != other.speed || difficulty != other.difficulty || description != other.description ||
+        if (name != other.name || bpm != other.bpm ||
+            speed != other.speed || difficulty != other.difficulty ||
             keyCount != other.keyCount || preferedStackSize != other.preferedStackSize)
             return false;
 

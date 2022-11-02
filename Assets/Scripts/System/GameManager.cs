@@ -21,4 +21,9 @@ public class GameManager : MonoBehaviour
 
         Input._5K.Disable();
     }
+
+    void Start()
+    {
+        PathManager.InitialiseDirectories();
+    }
 }
